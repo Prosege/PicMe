@@ -1,0 +1,14 @@
+
+<% @post.each do |post| %>
+
+<div class="postbox">
+  <p><%= post.owner %></p>
+  <%= link_to post_path(post) do %>
+    <div>
+      <%= image_tag post.image, :style => "height: 300px; width: 400px;" %>
+    </div>
+  <% end %>
+
+  <%= post.caption %>
+</div>
+<% end %>

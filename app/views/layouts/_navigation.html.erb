@@ -1,0 +1,11 @@
+
+<ul id = "navbar">
+  <li class="navoption"><%= link_to "Home", root_path, class: 'link' %></li>
+  <% if current_user %>
+    <li class="navoption"><%= link_to "Me", current_user, class: 'link' %></li>
+  <% else %>
+    <li class="navoption"><%= link_to 'Me', new_session_path, class: 'link' %></li>
+  <% end %>
+  <li class="navoption"><%= link_to "Popular", root_path, class: 'link' %></li>
+  <li class="navoption"><%= link_to "About", root_path, class: 'link' %></li>
+</ul>

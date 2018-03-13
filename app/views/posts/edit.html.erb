@@ -1,0 +1,16 @@
+<h1>Edit This Photo</h1>
+
+<div>
+  <%= image_tag @post.image.url(:medium) %>
+</div>
+<%= @post.caption %>
+
+<%= form_for @post do |form| %>
+  <%= form.text_field :caption %>
+  <%= form.submit %>
+<% end %>
+
+<% if current_user.name = @post.owner %>
+  <%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: 'Are you sure?' }, :class => "button" %>
+  <%= link_to "Cancel", post_path(@post), :class => "button" %>
+<% end %>

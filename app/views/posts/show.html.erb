@@ -1,0 +1,9 @@
+<h1>Post</h1>
+
+<div>
+  <%= image_tag @post.image.url(:medium) %>
+</div>
+<%= @post.caption %></br>
+
+<%= link_to "Edit", edit_post_path(@post), :class => "button" %>
+<%= link_to "All Posts", root_path, :class => "button" %>

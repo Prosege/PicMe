@@ -1,0 +1,126 @@
+@import "bootstrap";
+
+body {
+  padding-top: 100px;
+  padding-left: 20px;
+}
+
+.main-header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 6rem;
+  color: white;
+  background: #00e5ff;
+  line-height: 6rem;
+  transform: translateY(0);
+  transform: translate3d(0,0,0);
+  transition: .25s transform;
+  backface-visibility: hidden;
+}
+
+.main-header h1 {
+  float: left;
+  font-size: 1.4rem;
+  margin: 0 0 0 2rem;
+  text-transform: uppercase;
+}
+
+.main-header nav {
+  float: right;
+  font-size: 1.4rem;
+}
+
+.main-header nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+.main-header nav li {
+  display: inline-block;
+  padding: 0 2rem;
+  border-left: .1rem solid #555;
+}
+
+header {
+  background-color: #00e5ff;
+  color: #ffffff;
+}
+
+#title {
+  font-size: 65px;
+}
+
+#signup {
+  font-size: 32px;
+  background-color: #00b2c6;
+}
+
+#signin {
+  font-size: 32px;
+  background-color: #00b2c6;
+}
+
+#husername {
+  font-size: 32px;
+}
+
+.link {
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+  text-align: center;
+}
+
+.link:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#navbar {
+  background-color: #00b2c6;
+  list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+}
+
+.navoption {
+  float: left;
+  width: 25%;
+  text-align: center;
+  line-height: inherit;
+}
+
+.navoption p {
+  display: block;
+}
+
+.navoption p:hover {
+  background-color: #00e5ff;
+}
+
+footer {
+  background-color: #52747a;
+}
+
+.button {
+  background-color: #00e5ff;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.postbox {
+  width: 400px;
+  display: inline-block;
+  background-color: #00e5ff;
+  margin: 10px 0px 10px 10px;
+}
